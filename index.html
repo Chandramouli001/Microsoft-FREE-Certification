@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Multiple Links</title>
+  <style>
+    /* Optional: Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWCZER?ver=1433&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true");
+      background-size: 500px;
+      background-position: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.7); /* Adding some transparency */
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var confirmation = confirm("Are you sure you want to open all the links?");
+      alert(" Click Always Show to continue! ")
+      
+      if (confirmation) {
+        var websites = [
+        "https://Azure.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Cloudblogs.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Code.Visualstudio.com/docs/?wt.mc_id=studentamb_368331",
+        "https://Devblogs.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Developer.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Learn.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Social.Msdn.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Social.Technet.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Startups.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://Techcommunity.Microsoft.com/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/get-started-with-web-development/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/integrate-openapi-enabled-web-api-with-apim-and-visual-studio/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/develop-with-devops/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/build-web-api-nodejs-express/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/?wt.mc_id=studentamb_368331",
+        "https://learn.microsoft.com/en-us/training/modules/introduction-copilot-python/?wt.mc_id=studentamb_368331"
+      ];
+
+
+        for (var i = 0; i < websites.length; i++) {
+          // Open each link in a new tab
+          window.open(websites[i], '_blank');
+        }
+        // Remove the button
+        var button = document.getElementById('openLinksButton');
+        button.parentNode.removeChild(button);
+      }
+      alert("if not working reload the page")
+    });
+  </script>
+</body>
+</html>
